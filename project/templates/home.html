@@ -5,5 +5,9 @@ Home
 {% endblock title %}
 
 {% block body %}
-<h1>This is Home page</h1>
-    {% endblock  %}
+{% if un %}
+  <h1>Hello Welcome {{un}}</h1>
+  {% else %}
+  <h1>This is Home page</h1>
+{% endif %}
+{% endblock  %}

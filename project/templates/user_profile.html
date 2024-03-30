@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+ {% block title %}
+ user_profile
+ {% endblock title %}
+
+ {% block body %}
+ <center>
+    <h1>user_profile Page</h1>
+    <h3>Username is : {{UO.username}}</h3>
+    <h3>Email is : {{UO.email     }}</h3>
+    <img src="{{PO.profile_pic.url}}" alt="">
+ </center>
+ {% endblock body %}
